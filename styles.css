@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(239, 233, 174);
+    background-color: #DCDCDF;
 }
 /* Chaning navbar color */
 .navbar-expand-sm {
-    background-color: rgb(254, 195, 166);
+    background-color: #B8B8BC;
     border-color: #E7E7E7;
 }
 img {
