@@ -10,23 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-    body { /* Gabe: If everything is going to have the same font family, might as well just apply it to the body tag */
+    body { 
       font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }    
+    h1, h2 { 
+      text-align: center; 
     }
-    
-    /* Gabe: SEE body TAG COMMENT*/
-    /*p {*/ /* Gabe: I put the font family change in the style tag because I think it makes the more important for the viewer to see this than the other styles in the styles.css. *//*
-      font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }*/
-/* Kat added h1 and h2 to style so they would be centered and font family would be uniform throughout page. */
-    h1, h2 { /* Gabe: Reducing redundancy, combined h1 and h2 tags together */
-      text-align: center; /*font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
-    }
-    /* Gabe: SEE h1, h2 TAG COMMENT */
-    /*h2 {
-      text-align: center; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }*/
-    nick-name { /* Gabe: Created my own class to make the code for Bella's nickname more readable*/
+    nick-name { 
       font-style: italic;
     }
   </style>
@@ -47,6 +37,51 @@
   <br>
 
   <h1>Our Pets!</h1>
+
+
+
+  <!--Gabe: Setting up basic grid code-->
+  <div class="container-fluid">
+    
+    <!--First Row-->
+    <div class="row">
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+    </div>
+    <!--Second Row-->
+    <div class="row">
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+    </div>
+    <!--Third Row-->
+    <div class="row">
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+      <div class="col" style="background-color:lavender;">
+        .col</div>
+      <div class="col" style="background-color:orange;">
+        .col</div>
+    </div>
+  </div>
+
+
+
+
+
 <!-- Taylor's part starts here-->
   
     <div><strong>Buck</strong></div>
@@ -72,12 +107,12 @@
 
   <!-- Gabe's part starts here-->
   <!-- My code is inspired by w3schools and the Professor's Sample page to implement style details.-->
-  <div class="boxes" style=
+  <!--<div class="boxes" style=
       "background-color:rgb(171, 203, 212);
       border:1px dotted rgb(216, 243, 173);
       box-shadow: 2px 2px -3px;
       border-radius: 7px;
-      box-shadow: 0px 1px 0px 2px;">
+      box-shadow: 0px 1px 0px 2px;">-->
     <!-- Bella's Name-->
     <h2 id="bellaTitle">
       Bella 
@@ -106,7 +141,7 @@
     <p>
       <span style="color:grey">Bella</span>
       runs around all day and brings
-      <kbd><span style="color:rgb(84, 54, 54)">mud</span></kbd> 
+      <!--<kbd><span style="color:rgb(84, 54, 54)">-->mud<!--</span></kbd> -->
       back into the house, but she is too
       <kbd><span style="color:pink">cute</span></kbd>
       to get angry at.
