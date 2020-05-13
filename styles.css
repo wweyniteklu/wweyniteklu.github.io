@@ -1,4 +1,3 @@
-/* I think organizing the style changes such that the more organization-structures styles are defined in this styles.css file while text style changes are defined in the index.html styles tag is a good way to organize them. THOUGHTS anyone?? */
 body {
     background-color: rgb(255, 231, 153);
 }
@@ -14,26 +13,21 @@ table, th, td {
     margin-left: auto;
     margin-right: auto;
 }
-ul { /* Thank you google :) */
+ul { 
     display: table;
-    /*text-align:left;*/
     margin: 0 auto;
 }
 li { 
     text-align:left;
-    /*display:inline-block;*/
     font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .boxes { /* Gabe: Inspiration gotten from Mark's sample page. */
     background-color: rgba(255, 255, 255, 0);
     padding: 40px;
     margin: 20px;
-    /*border: 4px solid black;*/
-    /*border-radius: 15px;*/
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    /*box-shadow: 1px 1px 1px 1px;*/
     text-align: center;
 }
 #sobablock {
