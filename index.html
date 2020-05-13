@@ -1,6 +1,218 @@
 <html>
-<header><title> Weyni Teklu</title></header>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body { /* Gabe: If everything is going to have the same font family, might as well just apply it to the body tag */
+      font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    /* Gabe: SEE body TAG COMMENT*/
+    /*p {*/ /* Gabe: I put the font family change in the style tag because I think it makes the more important for the viewer to see this than the other styles in the styles.css. *//*
+      font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }*/
+/* Kat added h1 and h2 to style so they would be centered and font family would be uniform throughout page. */
+    h1, h2 { /* Gabe: Reducing redundancy, combined h1 and h2 tags together */
+      text-align: center; /*font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    }
+    /* Gabe: SEE h1, h2 TAG COMMENT */
+    /*h2 {
+      text-align: center; font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }*/
+    nick-name { /* Gabe: Created my own class to make the code for Bella's nickname more readable*/
+      font-style: italic;
+    }
+  </style>
+<title>Our Pets</title> <!--Kat: changed title name to reflect the content-->
+</head>
 <body>
-Hi there, my name is Weyni Teklu and I am just testing everything
+  <h1>Our Pets!</h1>
+<!-- Taylor's part starts here-->
+  
+    <div><strong>Buck</strong></div>
+    <p>He is a <span style="color:FireBrick">two year old</span> <strong>Border Collie</strong> who enjoys <em>chasing</em> anything that moves.</p>
+
+    <img src="media/bigbuck.jpg" alt="Buck" width="300">
+  <!-- Kat changed all media files to lowercase. They show up in preview but not on the actual github site.-->
+    <hr>
+    <div></div> <!-- to add space between the photo and the next pet-->
+
+<!-- Kat's part starts here--><br>
+
+<div class="boxes" style="background-color: rgba(249, 213, 253, 0.952); border: 9px dashed rgb(152, 123, 175); box-shadow: 0px 5px 4px 1px rgb(59, 2, 73); border-radius: 15px; text-align: center;">  
+  
+  <h2 id="sobablock">SOBA</h2>
+  <img class="img-circle" src="media/soba_2.jpg" alt="Soba" width="300">
+  <p>Soba is a <span style="color:olivedrab">three year old</span> <strong>domestic long-hair</strong> cat who loves <em>eating plants</em> and <em>chasing laser pointers</em>. She was rescued from <strong>Seattle Humane</strong> in February 2020 and is so happy to finally have a home.</p>
+<br>
+</div>
+
+<!-- Using br instead of the div tag for a space between parts. Kat's part ends here.-->
+<hr>
+
+  <!-- Gabe's part starts here-->
+  <!-- My code is inspired by w3schools and the Professor's Sample page to implement style details.-->
+  <div class="boxes" style=
+      "background-color:rgb(171, 203, 212);
+      border:1px dotted rgb(216, 243, 173);
+      box-shadow: 2px 2px -3px;
+      border-radius: 7px;
+      box-shadow: 0px 1px 0px 2px;">
+    <!-- Bella's Name-->
+    <h2 id="bellaTitle">
+      Bella 
+      <nick-name>
+        <span style="color:white">'</span><span
+        style="color:rgb(224, 163, 7)">Cac</span><span 
+        style="color:rgb(60, 60, 204)">hu</span><span
+        style="color:red">cha</span><span
+        style="color:white">'</span>
+      </nick-name>
+      Oliver
+    </h2>
+
+    <!--Photo of Bella-->
+    <img class="img-circle" src="media/bella.jpg" alt="Bella" width="300">
+
+    <!--Bella's introduction-->
+    <div>
+      <u>
+        Bella is a
+        <strong><span style="color:rgb(55, 57, 61)">Weimaraner<span></strong>!
+      </u>
+    </div> 
+
+    <!--More Bella information-->
+    <p>
+      <span style="color:grey">Bella</span>
+      runs around all day and brings
+      <kbd><span style="color:rgb(84, 54, 54)">mud</span></kbd> 
+      back into the house, but she is too
+      <kbd><span style="color:pink">cute</span></kbd>
+      to get angry at.
+      Even at <strong>9 years</strong>
+      of age, she's just as <em>energenic</em>
+      as a
+      <span style="color:rgb(126, 128, 0)">puppy</span>!
+    </p>
+
+</div>
+
+<!--visual line break-->
+<hr>
+  
+  <!-- to make a larger gap between the photo and the table--> 
+  <div></div> 
+<!-- Gabe's part ends here-->
+
+  <!-- Weyni's part starts here-->
+<div class="boxes"  style=
+  "background-color:rgb(219, 173, 159);
+  border:1px dotted rgb(228, 183, 115);
+  box-shadow: 2px 2px -3px;
+  border-radius: 7px;
+  box-shadow: 0px 1px 0px 2px;">>
+
+  <!-- Weyni's name -->
+  <h2 id="LilyTitle"> Lily </h2>
+  
+  <!-- Added a photo of her-->
+  <img src= "media/lily.jpg" atl="Lily" width= "300">
+
+  <div style="font-size:150%;"><strong>Lily</strong></div>
+   <p>Lily is a <span style="color:rgb(148, 108, 180)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :) </p>
+ 
+  </div>
+  <!-- Weyni's part ends here-->
+
+
+
+<!--visual line break-->
+<hr>
+
+<!-- group collaboration; Kat change
+  d title name and structure; each student added thier respective pet info-->
+<h2>How do we compare?</h2>
+<table style="width:65%">
+    <tr>
+      <th>Name</th>
+      <th>Breed</th>
+      <th>Favorite activity</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Soba</td>
+      <td>Domestic long-hair cat</td>
+      <td>Eating plants and chasing the laser pointer</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Buck</td>
+      <td>Border Collie</td>
+      <td>Chasing anything that moves</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Bella</td>
+      <td>Weimaraner</td>
+      <td>Hunting, and barking at birds</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Lily</td>
+      <td>Boxer</td>
+      <td>Loves to be in the outdoors</td> 
+      <td>7</td>
+    </tr>
+ <!-- Kat: Took out xtra tr tag-->
+  </table>
+    
+  <div></div> <!-- to make a larger gap between the table and the list-->
+
+<!--visual line break-->
+<hr>
+
+<!-- Another group collab. Kat created the list structure; each student added their pet's info-->
+
+  <h2>Fun facts about us</h2>
+  <p>Listed in alphabetical order:</p>
+  <!--Gabe: Fixed the list by modifying the ul tag in styles.css to text-align: left,
+    then reducing the margin for the box to 0px, changing the width to 70% its regular size,
+    and re-inserting the automated left and right margins-->
+  <div class="boxes" style=
+      "padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%">
+    <ul>
+      <li>
+        <strong><span style="color:grey">Bella</span>:</strong>
+        Weimaraners are nick-named
+        <span style="color:grey;font-weight:bold">Grey-Ghosts</span>,
+        for their <kbd>short</kbd> and <em>smooth</em> grey hair.
+      </li>
+      <li>
+        <span style="color:FireBrick"><strong>Buck</strong>:</span>
+        A fun fact about me is that I have two siblings, my brother Grif and my sister Dare!
+      </li>
+      <li>
+        <span style="color:rgb(148, 108, 180)"><strong> Lily</strong>:</span>
+        A fun fact about me is that I live with three cats and a turtle.
+      </li>
+      <li>
+        <span style="color:olivedrab"><strong>Soba</strong>:</span>
+        A fun fact about me is that I'm a shelter kitty. Adopt, don't shop. :)
+      </li>
+    <!-- Added end ul tag-->
+    </ul>
+  </div>
+
+  <!--visual line break-->
+  <hr>
+
+  <!--Gabe: created a link back to our github that we complete this assignment-->
+  <div style="text-align: center;">
+    Visit the website where this page was made <a href="https://github.com/gabriel-a-oliver/gabriel-a-oliver.github.io">here</a>!
+  </div>
+  
 </body>
 </html>

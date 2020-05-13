@@ -1,0 +1,74 @@
+/* I think organizing the style changes such that the more organization-structures styles are defined in this styles.css file while text style changes are defined in the index.html styles tag is a good way to organize them. THOUGHTS anyone?? */
+body {
+    background-color: rgb(255, 231, 153);
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul { /* Thank you google :) */
+    display: table;
+    /*text-align:left;*/
+    margin: 0 auto;
+}
+li { 
+    text-align:left;
+    /*display:inline-block;*/
+    font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.boxes { /* Gabe: Inspiration gotten from Mark's sample page. */
+    background-color: rgba(255, 255, 255, 0);
+    padding: 40px;
+    margin: 20px;
+    /*border: 4px solid black;*/
+    /*border-radius: 15px;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    /*box-shadow: 1px 1px 1px 1px;*/
+    text-align: center;
+}
+#sobablock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 7px;   
+    border-radius: 12px;
+    background-color: rgb(214, 181, 241);
+    padding: 10px; 
+    width: 80px;
+    height: 25px;
+}
+.img-circle {
+    border-radius: 20%;
+}
+#bellaTitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    height: 30px;
+    border-radius: 75px;
+    border: 2px dashed rgb(236, 83, 236);    background-color: rgba(255, 255, 255, 0.267);
+
+}
+#LilyTitle {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(165, 134, 223);
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+a:hover { /* Gabe: Inspiration gotten from Mark's sample page. */
+    color: red;
+}
