@@ -1,5 +1,10 @@
 body {
-    background-color: rgb(255, 231, 153);
+    background-color: #DCDCDF;
+}
+/* Chaning navbar color */
+.navbar-expand-sm {
+    background-color: #B8B8BC;
+    border-color: #E7E7E7;
 }
 img {
     display: block;
@@ -21,6 +26,7 @@ li {
     text-align:left;
     font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .boxes { /* Gabe: Inspiration gotten from Mark's sample page. */
     background-color: rgba(255, 255, 255, 0);
     padding: 40px;
@@ -64,5 +70,5 @@ li {
 }
 
 a:hover { /* Gabe: Inspiration gotten from Mark's sample page. */
-    color: red;
+    color: rgb(127, 230, 224);
 }
