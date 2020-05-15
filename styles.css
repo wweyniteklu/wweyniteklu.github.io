@@ -39,6 +39,7 @@ li {
 }
 #sobablock {
     font-family: Impact, fantasy;
+    color: rgb(255, 255, 255);
     text-align: center;
     display: block;
     padding: 4px;
@@ -52,6 +53,10 @@ li {
 .img-circle {
     border-radius: 20%;
     padding: 25px
+}
+.carousel-inner img {
+    width: auto;
+    height: 500px;
 }
 #bellaTitle {
     margin-left: auto;
