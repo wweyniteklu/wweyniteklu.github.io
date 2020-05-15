@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(245, 213, 140);
+    background-color: 90867E;
     text-align: center;
 }
 /* Chaning navbar color */
 .navbar-expand-sm {
-    background-color: #1C110A;
+    background-color: #3B2F27;
     border-color: #E7E7E7;
 }
 img{
@@ -56,16 +56,11 @@ li {
 .carousel-inner img {
     width: auto;
     height: 500px;
-  }
-/*#bellaTitle {
+}
+#bellaTitle {
     margin-left: auto;
     margin-right: auto;
-    width: 270px;
-    height: 30px;
-    border-radius: 75px;
-    border: 2px dashed rgb(236, 83, 236);    background-color: rgba(255, 255, 255, 0.267);
-
-}*/
+}
 #LilyTitle {
     display: block; 
     margin-left: auto;
