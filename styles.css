@@ -39,6 +39,7 @@ li {
 }
 #sobablock {
     font-family: Impact, fantasy;
+    color: rgb(255, 255, 255);
     text-align: center;
     display: block;
     padding: 4px;
