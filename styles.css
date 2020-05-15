@@ -50,6 +50,17 @@ li {
     letter-spacing: 7px;   
     border-radius: 10px;
 }
+#buckbck { 
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 20px;
+    width: 100px; 
+}
 .img-circle {
     border-radius: 20%;
     padding: 25px
