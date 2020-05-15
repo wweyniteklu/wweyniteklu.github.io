@@ -29,12 +29,42 @@
     nick-name { /* Gabe: Created my own class to make the code for Bella's nickname more readable*/
       font-style: italic;
     }
+    h1, h2 {
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 7px;
+      color: #1C110A
+    }
+    .navbar
+        {
+            box-shadow: 0px 6px rgb(255, 255, 255);
+        }
   </style>
 <title>Our Pets</title> <!--Kat: changed title name to reflect the content-->
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="#">
+      <!--Changing our logo to white to match our aesthetic-->
+    <img src="media/white-pawprint.png" alt="pawprint" width="60">
+  </a>
+  
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <span style="color:rgb(255, 255, 255)"> Welcome </span>
+    </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="fun fact.html">
+          <span style="color:rgb(255, 255, 255)"> Fun Facts </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 <!-- group collaboration; Kat change
   d title name and structure; each student added thier respective pet info-->
+  <br>
   <h2>How do we compare?</h2>
   <table style="width:65%">
       <tr>
@@ -89,27 +119,43 @@
         width: 70%">
       <ul>
         <li>
-          <strong><span style="color:grey">Bella</span>:</strong>
+          <strong><span style="color:#50A2A7">Bella</span>:</strong>
           Weimaraners are nick-named
           <span style="color:grey;font-weight:bold">Grey-Ghosts</span>,
           for their <kbd>short</kbd> and <em>smooth</em> grey hair.
         </li>
         <li>
-          <span style="color:FireBrick"><strong>Buck</strong>:</span>
+          <span style="color:#9B2915"><strong>Buck</strong>:</span>
           A fun fact about me is that I have two siblings, my brother Grif and my sister Dare!
         </li>
         <li>
-          <span style="color:rgb(148, 108, 180)"><strong> Lily</strong>:</span>
+          <span style="color:#E9B44C"><strong> Lily</strong>:</span>
           A fun fact about me is that I live with three cats and a turtle.
         </li>
         <li>
-          <span style="color:olivedrab"><strong>Soba</strong>:</span>
+          <span style="color:#1C110A"><strong>Soba</strong>:</span>
           A fun fact about me is that I'm a shelter kitty. Adopt, don't shop. :)
         </li>
       <!-- Added end ul tag-->
       </ul>
     </div>
   
+
+
+    <!--Gabe: Inspired by w3schools example-->
+    <div class="container mt-3">
+      <h2>Fun facts about us</h2>
+      <!--<p>To create an inline flexbox container, use the d-inline-flex class:</p>-->
+      <p>Listed in alphabetical order:</p>
+      <div class="d-inline-flex-column p-3 bg-secondary text-white">  
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+        <div class="p-2 bg-info">Flex item 4</div>
+      </div>
+    </div>
+
+
     <!--visual line break-->
     <hr>
   
