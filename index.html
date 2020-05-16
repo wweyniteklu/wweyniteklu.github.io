@@ -28,7 +28,23 @@
         {
             box-shadow: 0px 6px rgb(255, 255, 255);
         }
-    
+
+/* Begin new code: Added these classes to play around with flexboxes to sit within your grid columns so that the text stacks with the images when the browser window becomes small. */
+    .flexy-container {
+      display: flex; /* This makes it a flex container */
+      flex-wrap: wrap; /* This makes it stack eventually when browser window is small enough */
+      justify-content: center; /* This makes it nicely center aligned */
+    }
+    .flexy {
+      min-width: 200px; /* This sets the minimum width of the individual flexbox within the flex container before it stacks, which by extension sets the minimum width of the images to 200 also. */
+      max-width: 300px; /* This sets the maximim width of the flex dinglethingie which also by extension sets the max width of the images. */
+      width: 50%; /* This is the important one. It limits how much of the flex container (which is the same as the grid column) the flexboxes span. */
+    }
+    .flexy img {
+      width: 100%; /* This sets the image fit within whatever the flexy flexbox thing is set to. */
+    }
+/* End new code */
+
   </style>
 <title>Our Pets</title> <!--Kat: changed title name to reflect the content-->
 </head>
@@ -65,22 +81,30 @@
     
     <!--First row (Lily + Buck)-->
     <div class="row">
-      <div class="col" style="background-color: #E9B44C;">
-        <h2>Lily</h2>
-        <p>
-          Lily is a <span style="color:rgb(148, 108, 160)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :)
-        </p>
-      </div>
-          
-        <div class="col" style="background-color: #E9B44C;"><img class="img-circle" src="media/lily.jpg" alt=" Lily" width="300"></div>
-    
-      <div class="col" style="background-color:#9B2915;"> 
-        <img class="img-circle" src="media/bigbuck.jpg" alt="Buck" width="300">
+      <div class="col-6" style="background-color: #E9B44C;">
+        <!--Begin new code: New flex container and flexboxes for the images and text, replacing the two columns you were using. You should do this with the other row. -->
+        <div class="flexy-container" style="flex-direction: row-reverse;">
+          <div class="flexy"><img class="img-circle" src="media/lily.jpg" alt=" Lily"></div>
+          <div class="flexy">
+            <h2>Lily</h2>
+              <p>Lily is a <span style="color:rgb(148, 108, 160)">seven old</span> <strong>boxer</strong> who really <em>loves</em> squeaky toys :)</p>
+          </div>
         </div>
-      <div class="col" style="background-color: #9B2915;">
-       <h2 id="buckbck">Buck</h2>
+      </div>
 
-       <p>Buck is a <span style="color:#000000">two year old</span> <strong>Border Collie</strong> who enjoys <em>chasing</em> anything that moves.</p>
+      <div class="col-6" style="background-color:#9B2915;"> 
+        <div class="flexy-container">          
+          <div class="flexy"><img class="img-circle" src="media/bigbuck.jpg" alt="Buck"></div>
+          <div class="flexy">
+            <h2>Buck</h2>
+            <p>Buck is a <span style="color:#000000">two year old</span> <strong>Border Collie</strong> who enjoys <em>chasing</em> anything that moves.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col" style="background-color: #9B2915;">
+       
       </div>
     </div>
     <!--Second row (Bella + Soba)-->
