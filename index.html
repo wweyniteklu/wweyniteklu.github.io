@@ -7,6 +7,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- End Bootstrap 4 -->  
 <!-- Kat: Adding meta tag as instructed on w3schools-->
+<!--INSTR: Good find. I didn't bother getting into this since it would require some explaining... :) If we're doing best practices, though, you should put a line at the top of this document before the html tag that specifies the document type. Ah hell, I'll write something and post it to Slack.-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
@@ -37,11 +38,11 @@
     }
     .flexy {
       min-width: 200px; /* This sets the minimum width of the individual flexbox within the flex container before it stacks, which by extension sets the minimum width of the images to 200 also. */
-      max-width: 300px; /* This sets the maximim width of the flex dinglethingie which also by extension sets the max width of the images. */
+      max-width: 300px; /* This sets the maximim width of the flex dinglethingie, which also by extension sets the max width of the images. */
       width: 50%; /* This is the important one. It limits how much of the flex container (which is the same as the grid column) the flexboxes span. */
     }
     .flexy img {
-      width: 100%; /* This sets the image fit within whatever the flexy flexbox thing is set to. */
+      width: 100%; /* This sets the image to fit within whatever the flexy flexbox thing is set to. */
     }
 /* End new code */
 
@@ -81,6 +82,7 @@
     
     <!--First row (Lily + Buck)-->
     <div class="row">
+      <!--INSTR: Forgot to comment here that Christa and I changed the col class to col-6, which sets it to 50% of the page width since the "6" means it's taking up 6 of Bootstrap's 12 columns.-->
       <div class="col-6" style="background-color: #E9B44C;">
         <!--Begin new code: New flex container and flexboxes for the images and text, replacing the two columns you were using. You should do this with the other row. -->
         <div class="flexy-container" style="flex-direction: row-reverse;">
